@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div>
+          <a href="#" class="nav-element">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="nav-element">
+            <i class="fas fa-utensils"></i>
+            <span>Meals</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="nav-element">
+            <i class="fas fa-hamburger"></i>
+            <span>Burger</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="nav-element">
+            <i class="fas fa-pizza-slice"></i>
+            <span>Pizza</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="nav-element">
+            <i class="fas fa-blender-phone"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </nav>
+      <div class="toggle-nav" onclick="togglenav()"></div>
+    </header>
+    <main>
+      <section class="variety-of-foods">
+        <h2 class="section-title">Variety Of Foods</h2>
+        <div class="variety-of-foods-icons-container">
+          <i class="fas fa-egg active"></i>
+          <i class="fas fa-stroopwafel"></i>
+          <i class="fas fa-cheese"></i>
+          <i class="fas fa-hotdog"></i>
+          <i class="fas fa-drumstick-bite"></i>
+          <i class="fas fa-apple-alt"></i>
+          <i class="fas fa-ice-cream"></i>
+          <i class="fas fa-fish"></i>
+          <i class="fas fa-cookie"></i>
+          <i class="fas fa-seedling"></i>
+        </div>
+      </section>
+      <section class="popular-meals">
+        <h2 class="section-title">Popular Meals</h2>
+        <div class="popular-meals-content">
+          <div class="popular-meals-card">
+            <img src="images/card-img-1.png" />
+            <span>FISH</span>
+            <button class="btn">Order Now</button>
+          </div>
+          <div class="popular-meals-card">
+            <img src="images/card-img-2.png" />
+            <span>CAKE</span>
+            <button class="btn">Order Now</button>
+          </div>
+          <div class="popular-meals-card">
+            <img src="images/card-img-3.png" />
+            <span>LOBSTER</span>
+            <button class="btn">Order Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-content">
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">PANCAKES</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">CUPCAKES</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">HUMMUS</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">HAMBURGER</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">SALMON</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-img-1.jpg" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-title">VEGETABLES</span>
+              <span class="gallery-overlay-desc"
+                >LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. IPSA
+                COMMODI POSSIMUS IURE HIC EXCEPTURI. CORPORIS!</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-text-container">
+          <h3>SIGN ME UP</h3>
+          <h4>BE THE FIRST TO KNOW ABOUT NEW PRODUCTS</h4>
+        </div>
+        <div class="footer-form">
+          <input placeholder="Enter Your Email" />
+          <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>CodeAndCreate © All rights reserved</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

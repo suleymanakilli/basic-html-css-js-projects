@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Hotel Booking &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo menu-item">
+            <div class="search menu-item">
+                <input id="searchInput" type="text" placeholder="Search hotels">
+                <svg class="search-icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </div>
+            <div class="user-menu">
+                <div class="bookmark svg-container menu-item">
+                    <span class="notification-number">7</span>
+                    <svg class="bookmark-icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                </div>
+                <div class="chat svg-container menu-item">
+                    <span class="notification-number">14</span>
+                    <svg class="chat-icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                </div>
+                <div class="user menu-item">
+                    <img src="img/user.jpg" alt="user image" class="user-image">
+                    <p>Süleyman</p>
+                    <div class="user-dropdown">
+                        <ul class="list">
+                            <li class="list-item ">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                                </svg>
+                                <span>Settings</span>
+                            </li>
+                            <li class="list-item">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                </svg>
+                                <span>Edit</span>
+                            </li>
+                            <li class="list-item">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#icon-exit"></use>
+                                </svg>
+                                <span>Logout</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <nav class="navbar">
+                <ul class="menu-items" id="navbar-menu-items">
+                    <li class="menu-item menu-item-active" onclick="toggleActiveMenuItem(this)">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Hotel</span>
+                    </li>
+                    <li class="menu-item" onclick="toggleActiveMenuItem(this)">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                        </svg>
+                        <span>Flight</span>
+                    </li>
+                    <li class="menu-item" onclick="toggleActiveMenuItem(this)">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <span>Car Rental</span>
+                    </li>
+                    <li class="menu-item" onclick="toggleActiveMenuItem(this)">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map"></use>
+                        </svg>
+                        <span>Tours</span>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main">
+                <section class="gallery">
+                    <div class="img-container">
+                        <img src="img/hotel-1.jpg" alt="">
+                        <div class="img-overlay">
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/hotel-2.jpg" alt="">
+                        <div class="img-overlay">
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/hotel-3.jpg" alt="">
+                        <div class="img-overlay">
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="overview">
+                    <div class="hotel-name">
+                        <h1>HOTEL LAS PALMAS</h1>
+                        <div class="stars">
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="star-icon">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hotel-location">
+                        <svg class="location-icon">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <a href="#" class="link">Albufeira, Portugal</a>
+                        <div class="statistics">
+                            <span class="rating">8.6</span>
+                            <span class="vote">429 VOTES</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="main-content">
+                    <section class="description">
+                        <div class="paragraph flow-content">
+                            <p class="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                nisi dignissimos debitis ratione sapiente saepe.
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.</p>
+                            <p class="second-paragraph">Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                                architecto voluptate
+                                delectus, inventore iure aliquid aliquam.</p>
+                        </div>
+                        <div class="features">
+                            <ul class="list">
+                                <li class="list-item">Close to the beach</li>
+                                <li class="list-item">Free airport shuttle</li>
+                                <li class="list-item">Air conditioning and heating</li>
+                                <li class="list-item">We speak all languages</li>
+                                <li class="list-item">Breakfast included</li>
+                                <li class="list-item">Free wifi in all rooms</li>
+                                <li class="list-item">Pets allowed</li>
+                                <li class="list-item">Perfect for families</li>
+                            </ul>
+                        </div>
+                        <div class="recommends">
+                            <p>Lucy and 3 other friends recommend this hotel.</p>
+                            <div class="image-container">
+                                <img src="img/user-1.jpg" alt="User 1">
+                                <img src="img/user-2.jpg" alt="User 2">
+                                <img src="img/user-3.jpg" alt="User 3">
+                                <img src="img/user-4.jpg" alt="User 4">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="testimonials">
+                        <div class="testimonial flow-content">
+                            <span class="quote">&ldquo;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi, totam, itaque officia ex.</p>
+                            <div class="reviewer">
+                                <div class="user">
+                                    <img src="img/user-5.jpg" alt="User 1">
+                                    <div class="user-info">
+                                        <p class="reviewer-name">NICK SMITH</p>
+                                        <p class="review-date">Feb 23rd, 2017</p>
+                                    </div>
+                                </div>
+
+                                <p class="review-rate">7.8</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial flow-content">
+                            <span class="quote">&#8220;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi, totam, itaque officia ex.</p>
+                            <div class="reviewer">
+                                <div class="user">
+                                    <img src="img/user-6.jpg" alt="User 1">
+                                    <div class="user-info">
+                                        <p class="reviewer-name">NICK SMITH</p>
+                                        <p class="review-date">Feb 23rd, 2017</p>
+                                    </div>
+                                </div>
+
+                                <p class="review-rate">7.8</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="link">Show all <span>&rarr;</span> </a>
+                    </section>
+                    <section class="cta flow-content">
+                        <h2>GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</h2>
+                        <button class="btn">
+                            <span class="first-text">Book now</span>
+                            <span class="second-text">Only 4 rooms left</span>
+                        </button>
+                    </section>
+                </div>
+
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
